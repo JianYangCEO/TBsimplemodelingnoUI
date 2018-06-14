@@ -2,7 +2,7 @@
 S <- .1
 Population<- 1
 L <- .2
-
+#citation: https://ecommons.cornell.edu/bitstream/handle/1813/31916/BU-1321-M.pdf;sequence=1
 I <- .2
 #population of treated in numbers 
 Treatmentw <- 10
