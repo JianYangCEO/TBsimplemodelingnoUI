@@ -50,7 +50,7 @@ ddtim <- (IfromLM*L*Population)- ((ND+M)*I) - (Recoverym*I)
 ddtiw <- (IfromLW*L)- (ND+W)*(I) - (Recoveryw*I)
 ddtTm <- (Recoverym*I) - (B*C*Treatmentm*(I/Population)) - (ND*Treatmentm)
 ddtTw <- (Recoveryw*I) - (B*C*Treatmentw*(I/Population)) - (ND*Treatmentw)
-
+ddtl <- ddtlm + ddtlw
 
 numberOfYears <- 10 
 x <- c (1:10) 
@@ -59,12 +59,18 @@ x <- c (1:10)
 
 plot  (x, (S + (ddts*x)))
 
+plot  (x, (L + (ddtl*x)))
 
+plot  (x, (LM + (ddtlm*x)))
 
+plot  (x, (LW + (ddtlw*x)))
 
+plot  (x, (Treatmentw + (ddtTw*x)))
 
+plot  (x, (Treatmentm + (ddtTm*x)))
 
+plot  (x, (Im+ (ddtim*x)))
 
-
+plot  (x, (Iw + (ddtiw*x)))
 
 
